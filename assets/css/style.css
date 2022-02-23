@@ -1,6 +1,17 @@
 
 
 /*--------------------------------------------------------------
+# Body
+--------------------------------------------------------------*/
+
+body {
+  margin: 0;
+  background: rgb(238, 235, 235);
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-weight: 400;
+}
+
+/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
@@ -31,13 +42,36 @@
 # Navigation bar
 --------------------------------------------------------------*/
 #navbar {
-  background:#eeeeee;
-  left: 30px;
+  background:#e9eaeb;
+  left: 20px;
+  float: right;
   display: inline;
 }
+
+#nav-link ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 #nav-link li{
-  left: 20px;
-  display: inline;
+  font: #00446e;
+  display: inline-block;
+  margin-right: 150px;
+  margin-left: 75px;
+  padding-right: 25px;
+  padding-bottom: 5px;
+}
+
+#nav-link a{
+  color: #1b618c;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+#nav-link a :hover{
+  color: #5e7200;
 }
 
 
@@ -50,21 +84,20 @@
     opacity: 0;
     right: 15px;
     bottom: 15px;
-    z-index: 996;
     background: #49b5e7;
     width: 40px;
     height: 40px;
-    border-radius: 4px;
+    border-radius: 20px;
     transition: all 0.4s;
   }
   .back-to-top i {
     font-size: 28px;
-    color: #fff;
+    color: #5e7200;
     line-height: 0;
   }
   .back-to-top:hover {
-    background: #6dc4ec;
-    color: #fff;
+    background: #5e7200;
+    color: #e4e4e3;
   }
   .back-to-top.active {
     visibility: visible;
