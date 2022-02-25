@@ -15,7 +15,7 @@ body {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: rgb(255, 255, 255);
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
