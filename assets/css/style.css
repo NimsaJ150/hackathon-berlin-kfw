@@ -75,13 +75,35 @@ body {
 }
 
 /*--------------------------------------------------------------
-# Image one - style
+# Section 1 - style
 --------------------------------------------------------------*/
 
+/*-------------------
+# Image in Section 1
+-------------------*/
 #section1 .img-first-block img {
   width: fit-content; 
   height: fit-content;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  
+}
+
+/*--------------------------------------------------------------
+# Section 2 - style
+--------------------------------------------------------------*/
+
+
+/*-------------------
+# Video in Section 2
+-------------------*/
+#section2 .row video{
+  width: fit-content; 
+  height: fit-content;
+  display: block;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
