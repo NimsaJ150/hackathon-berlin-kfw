@@ -109,7 +109,7 @@ div {
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
-    background: blue;
+    background: #005ABC;
     color: white;
 }
 
@@ -118,9 +118,9 @@ div {
 }
 
 .blue-box {
-    background-color: blue;
+    background-color: #005ABC;
 }
 
 .green-box {
-    background-color: green;
+    background-color: #A4B419;
 }
