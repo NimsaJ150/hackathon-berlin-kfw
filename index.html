@@ -13,27 +13,36 @@
     <!-- Template Main CSS File, embendding the CSS file -->
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400&display=swap" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-  
+    
+    <!-- jQuery library / link to html files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#section0").load("0-header.html");
+      $("#section4").load("1-footer.html"); 
+    });
+    </script>
   </head>
-  <section>
+  <body>
 
     <!-- ======= Header.html ======= -->
-    <div class="link-header">
-      <iframe src="0-header.html" style="position:fixed; top: -15px;; left:0; bottom:0; right:0; width:100%; height:6.5%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>
-    </div>
+    <section id="section0"></section>
 
     <!-- ======= First Section ======= -->
     <section id="section1" class="first-section">
 
       <div class="container-1">
         <div class="row">
-          <div class="first-block">
-            <h1>Hier werden die "Header" Inhalte eingesetzt</h1>
-            <h2>Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper.</h2>
-            <div><a href="#section2" class="btn-scrollto-section-two">Section two</a></div>
-          </div>
           <div class="img-first-block">
             <img src="assets/images/imageOne.jpeg" class="img-kfwlogo-eins center" alt=""> <!-- ======= image of the first Section ======= -->
+          </div>
+          <div class="first-block">
+            <h1>KfW Dev Ops Challenge [Intro]</h1>
+            <p>Die KfW Dev Ops Challenge ist ein dreitägiger Hackathon, bei dem interdisziplinäre Teams in verschiedenen Aufgabenstellungen miteinander konkurrieren. Dabei unterscheidet sich die Dev Ops Challenge von anderen Hackathons insbesondere in der Prämierung. Alle Teams tragen durch ihre Performance dazu bei, das Sustainebility Budget zu erhöhen. Wofür das eingesetzt wird, entscheiden die Teilnehmenden vor Ort.</p>
+            <!--<div><a href="#section2" class="btn-scrollto-section-two">Section two</a></div>-->
           </div>
         </div>
       </div>
@@ -42,7 +51,7 @@
     <main id="main">
   
       <!-- ======= Second Section ======= -->
-      <!-- ======= Hackathon Video Section ======= -->
+      <!-- ======= Hackathon Location & Video Section ======= -->
       <section id="section2" class="second-section">
         <div class="container-2">
   
@@ -52,9 +61,11 @@
             </video>
   
             <div class="second-block">
-              <h3>Die IT der KfW steuert u.a. den laufenden Betrieb und neue Veränderungsprojekte der Fachbereiche. </h3>
-              <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi.</p>
-  
+              <h3>Location [Tumo Center]</h3>
+              <p>Das TUMO Center ist ein Hub für digitale Bildung von Jugendlichen. Es ist maximal auf Coworking ausgerichtet und bietet Platz für 150 Personen. Das mobile Setting der Einrichtung lässt eine Anpassung für verschieden Anlässe zu.<br> 
+                  Es liegt in der Wilmersdorfer Straße, einer beliebten Einkaufsstraße mitten in der Stadt und erstreckt sich über vier Stockwerke. Mehr Infos findest du auf: <a href="http://berlin.tumo.de/">Tumo [Berlin]</a>
+              </p>
+
               <div class="icon-box">
                 <div class="icon"><i class="select-item"></i></div>
                 <h4 class="title"><a href="">Lorem Ipsum</a></h4>
@@ -99,14 +110,10 @@
   
     </main>
     <!-- ======= footer.html ======= -->
-    <section id="section4" class="contact-section">
-      <div class="link-contact-section">
-        <iframe src="1-footer.html" style="position:relative; top: 0; left:0; bottom:0; right:0; width: 95%; height:10%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>
-      </div>
-    </section>
+    <section id="section4" class="contact-section"></section>
 
     <!-- Back-to-top button reference -->
-    <a href="#" class="back-to-top active"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top active"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#005A8C" fill-rule="evenodd" d="M21.854 17.148l-.706.706a.501.501 0 0 1-.706 0l-8.448-8.238-8.436 8.238a.5.5 0 0 1-.706 0l-.706-.706a.5.5 0 0 1 0-.706l9.495-9.296a.5.5 0 0 1 .706 0l9.507 9.296a.5.5 0 0 1 0 .706" style="fill: #005a8c;"/></svg></i></a>
   
   </body>
 </html> 

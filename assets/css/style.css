@@ -9,6 +9,7 @@ body {
   background: rgb(238, 235, 235);
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   font-weight: 400;
+  padding: 100px 0;
 }
 
 /*--------------------------------------------------------------
@@ -17,9 +18,12 @@ body {
 #header {
   background: rgb(255, 255, 255);
   transition: all 0.5s;
-  z-index: 997;
   padding: 20px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  z-index: 99;
+  top: 0px;
+  width: 100%;
 }
 #header .headerLogo {
   font-size: 28px;
@@ -42,7 +46,7 @@ body {
 # Navigation bar
 --------------------------------------------------------------*/
 #navbar {
-  background:#e9eaeb;
+  background:#ffffff;
   left: 20px;
   float: right;
   display: inline;
@@ -57,20 +61,21 @@ body {
 #nav-link li{
   font: #00446e;
   display: inline-block;
-  margin-right: 150px;
-  margin-left: 75px;
-  padding-right: 25px;
+  margin-right: 90px;
+  margin-left: 60px;
+  padding-right: 8px;
   padding-bottom: 5px;
 }
 
 #nav-link a{
-  color: #1b618c;
+  color: #00446e;
   text-decoration: none;
   text-transform: capitalize;
   font-size: 15px;
 }
 
 #nav-link a :hover{
+  text-decoration: underline;
   color: #5e7200;
 }
 
@@ -114,14 +119,16 @@ body {
 --------------------------------------------------------------*/
 .back-to-top {
     position: fixed;
-    visibility: hidden;
+    visibility: visible;
     opacity: 0;
-    right: 15px;
-    bottom: 15px;
-    background: #49b5e7;
+    right: 25px;
+    bottom: 65px;
+    background: transparent;
+    border-style: solid; 
+    border-color: #00446e;
     width: 40px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 21px;
     transition: all 0.4s;
   }
   .back-to-top i {
@@ -134,7 +141,8 @@ body {
     color: #e4e4e3;
   }
   .back-to-top.active {
-    visibility: visible;
     opacity: 1;
+    width: 40px;
+    height: 40px;
   }
   
