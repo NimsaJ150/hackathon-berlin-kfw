@@ -1,8 +1,4 @@
 
-html {
-  scroll-behavior: smooth;
-}
-
 /*--------------------------------------------------------------
 # Body
 --------------------------------------------------------------*/
@@ -265,33 +261,100 @@ body {
 /*--------------------------------------------------------------
 # Back to top - button
 --------------------------------------------------------------*/
-.back-to-top {
+#back-to-top {
+    display: none;
     position: fixed;
-    visibility: visible;
-    opacity: 0;
     right: 25px;
     bottom: 65px;
     background: transparent;
     border-style: solid; 
     border-color: #00446e;
+    cursor: pointer;
     width: 40px;
     height: 40px;
-    border-radius: 21px;
-    transition: all 0.4s;
+    outline: none;
+    border-radius: 50%;
+    transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
 }
-.back-to-top i {
+#back-to-top i {
     font-size: 28px;
     color: #5e7200;
     line-height: 0;
 }
-.back-to-top:hover {
-    background: #5e7200;
+#back-to-top:hover {
+    background-color: #5e7200;
     color: #e4e4e3;
 }
-.back-to-top.active {
-    opacity: 1;
-    width: 40px;
-    height: 40px;
+
+/*-------------------------
+# Back to top btn animation
+-------------------------*/
+.btnEntrance {
+animation-duration: 0.5s;
+animation-fill-mode: both;
+animation-name: btnEntrance;
 }
-  
+/* zoomIn */
+/*@keyframes btnEntrance {
+  from{
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+  }
+}*/
+
+/* fadeInUp */
+@keyframes btnEntrance {
+  from{
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit{
+animation-duration: 0.25s;
+animation-fill-mode: both;
+animation-name: btnExit;
+}
+/* zoomOut */
+/*@keyframes btnExit {
+  from{
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}*/
+
+/* fadeInUp */
+@keyframes btnExit {
+  from{
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+/*-------------------------
+# Back to top btn mobile
+-------------------------*/
+/*
+@media(max-width: 992px) {
+  #section0 {padding: 0px 0px;}
+  .back-to-top {font-size: 22px; width: fit-content; height: fit-content;}
+}
+
+@media(max-width: 768px) {
+
+} */
