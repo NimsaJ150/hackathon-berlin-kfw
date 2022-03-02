@@ -1,4 +1,7 @@
 
+html {
+  scroll-behavior: smooth;
+}
 
 /*--------------------------------------------------------------
 # Body
@@ -149,30 +152,29 @@ body {
 # footer / Section 6 - style
 --------------------------------------------------------------*/
 #footer {
-  padding: 30px 0 0 0;
+  padding: 0 0 0 0;
   color: #444444;
   font-size: 14px;
   background: #F6F5ED;
 }
 #footer .footer-contact-data{
   background: #F6F5ED;
-  padding: 0 0 0 125px;
+  padding: 70px 0 60px 60px;
+  margin-left: 30px;
 }
 #footer .footer-up {
-  padding: 50px 0 30px 0;
+  padding: 0 0 30px 0;
   background: #F6F5ED;
-  margin-bottom: 30px;
+  margin-bottom: 30px; /* to draw the buttom white margin line */
 }
 #footer .footer-up .contact-block {
-  margin-bottom: 30px;
   display: inline-block;
-  padding: 0 0 0 125px;
+  padding: 0 0 60px 60px;
 }
 #footer .footer-up .contact-block h4 {
   font-size: 22px;
   margin: 0 0 30px 0;
   color: #0f394c; 
-  padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
 }
@@ -184,8 +186,9 @@ body {
   color: #777777;
 }
 #footer .footer-up .footer-second {
+  padding: 0 0 0 60px;/* Columns position of links and social network */
   display: inline-block;
-  padding: 0 0 0 150px;/* Columns position of links and social network */
+  margin-bottom: 30px;
 }
 #footer .footer-up .footer-second h4 {
   font-size: 22px;
@@ -229,7 +232,7 @@ body {
 #footer .footer-up .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #00446e;
+  background: #F6F5ED;
   color: #fff;
   line-height: 1;
   padding: 8px 8px 10px 10px;
@@ -246,7 +249,8 @@ body {
   text-decoration: none;
 }
 #footer .closing-footer{
-  padding: 0 0 0 120px;
+  padding: 0 0 0 60px;
+  margin-left: 15px;
   background: #F6F5ED;
 }
 #footer .closing-footer a {
@@ -274,19 +278,20 @@ body {
     height: 40px;
     border-radius: 21px;
     transition: all 0.4s;
-  }
-  .back-to-top i {
+    transition-timing-function: ease-in-out;
+}
+.back-to-top i {
     font-size: 28px;
     color: #5e7200;
     line-height: 0;
-  }
-  .back-to-top:hover {
+}
+.back-to-top:hover {
     background: #5e7200;
     color: #e4e4e3;
-  }
-  .back-to-top.active {
+}
+.back-to-top.active {
     opacity: 1;
     width: 40px;
     height: 40px;
-  }
+}
   
