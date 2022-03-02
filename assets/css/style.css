@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* Typography Start*/
+@font-face {
+    font-family: KFWCentroSans;
+    src: url('../fonts/KfW Webfonts/KfW Centro Sans Webfont/KfW Centro Sans Regular/KFWCentroSans-Reg.ttf');
+}
+
+h1, h2, h3, h4, h5, h6,
+li, p, div {
+    font-family: KFWCentroSans, serif;
+    font-weight: 300;
+    margin: 10px auto 10px auto;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 56px;
+    color: #005ABC;
+
+}
+
+.h1-addition {
+    color: #519DC2;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 42px;
+}
+
+h3 {
+    font-size: 128px;
+    line-height: 36px;
+}
+
+h4 {
+    font-size: 28px;
+    line-height: 128px;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+li, p, div {
+    font-size: 19px;
+    line-height: 22px;
+}
+
+small {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+div {
+    margin: 0;
+}
+
+/* Typography End */
+
+/* General Styling */
+.responsive {
+    width: 100%;
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 800px) {
+    .responsive {
+        display: block;
+    }
+
+    .responsive > * {
+        width: 100%;
+    }
+}
+
+/* Desktop Layout */
+@media screen and (min-width: 801px) {
+    .responsive {
+        display: inline-flex;
+    }
+
+    .responsive > * {
+        width: 50%;
+    }
+}
+
+/* Oversized Screen Centering */
+@media screen and (min-width: 1200px) {
+    .responsive {
+        max-width: 1200px;
+        padding-inline: calc((100vw - 1200px) / 2);
+    }
+}
+
+.example-border {
+    border: 1px solid black;
+}
+
+.example-box {
+    height: calc(100% - 40px - 40px); /* Make both boxes the same height */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #005ABC;
+    color: white;
+}
+
+.example-image {
+    max-width: 100%;
+}
+
+.blue-box {
+    background-color: #005ABC;
+}
+
+.green-box {
+    background-color: #A4B419;
+}

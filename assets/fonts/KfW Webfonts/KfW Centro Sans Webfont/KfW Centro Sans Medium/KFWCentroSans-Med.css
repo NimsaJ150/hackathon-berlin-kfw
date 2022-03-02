@@ -1,0 +1,12 @@
+/* Webfont: KFWCentroSans-Medium */@font-face {
+    font-family: 'KFWCentroSansMedium';
+    src: url('KFWCentroSans-Med.eot'); /* IE9 Compat Modes */
+    src: url('KFWCentroSans-Med.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('KFWCentroSans-Med.woff') format('woff'), /* Modern Browsers */
+         url('KFWCentroSans-Med.woff2') format('woff2'), /* Modern Browsers */
+         url('KFWCentroSans-Med.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
