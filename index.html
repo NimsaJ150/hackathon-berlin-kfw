@@ -1,138 +1,122 @@
 <!DOCTYPE html>
-
-<html lang="en">
-  <head>
+<html lang="de">
+<head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
+
     <title>Berlin Hackathon</title>
     <meta name="KfW Bankengruppe" content="noindex, nofollow">
     <meta content="KfW Bankengruppe" name="description">
     <meta content="KfW Bankengruppe" name="keywords">
 
     <!-- Template Main CSS File, embendding the CSS file -->
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400&display=swap" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    
+
     <!-- jQuery library / responsive webpage for mobile phones -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <!-- jQuery library / link to html files -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous">
+    <script>
+        $(function () {
+            $("#section0").load("0-header.html");
+            $("#section9").load("1-footer.html");
+        });
     </script>
-    <script> 
-      $(function(){
-      $("#section0").load("0-header.html");
-      $("#section6").load("1-footer.html"); 
-      });
-    </script>
-  </head>
-  <body>
+</head>
+<body>
 
-    <!-- ======= Header.html ======= -->
-    <section id="section0"></section>
+<!-- ======= Header.html ======= -->
+<section id="section0"></section>
 
-    <!-- ======= First Section ======= -->
-    <section id="section1">
+<!-- ======= First Section ======= -->
+<section id="section0a" class="responsive">
+    <div>
+        <div class="img-wrap">
+            <a class="button" href="#section6">Zur Anmeldung</a>
+            <!-- ======= image of the first Section ======= -->
+        </div>
+    </div>
+</section><!-- End First Section -->
 
-      <div class="img-first-block">
-        <img src="assets/images/imageOne.jpeg" class="img-kfwlogo-eins center" alt=""> <!-- ======= image of the first Section ======= -->
-      </div>
-      
-      <div class="container d-flex align-items-center justify-content-between">
-        <div class="row">
-          <div class="first-block">
-            <h1>KfW Dev Ops Challenge [Intro]</h1>
-            <p>Die KfW Dev Ops Challenge ist ein dreitägiger Hackathon, bei dem interdisziplinäre Teams in verschiedenen Aufgabenstellungen miteinander konkurrieren. Dabei unterscheidet sich die Dev Ops Challenge von anderen Hackathons insbesondere in der Prämierung. Alle Teams tragen durch ihre Performance dazu bei, das Sustainebility Budget zu erhöhen. Wofür das eingesetzt wird, entscheiden die Teilnehmenden vor Ort.</p>
+<!-- ======= First Section ======= -->
+<section class="responsive light-green-box" id="section1">
+    <div>
+        <div>
+            <h1><span class="arrow">°</span> KfW Dev Ops Challenge [Intro]</h1>
+            <p>Die KfW Dev Ops Challenge ist ein dreitägiger Hackathon, bei dem interdisziplinäre Teams in
+                verschiedenen Aufgabenstellungen miteinander konkurrieren. Dabei unterscheidet sich die Dev Ops
+                Challenge von anderen Hackathons insbesondere in der Prämierung. Alle Teams tragen durch ihre
+                Performance dazu bei, das Sustainebility Budget zu erhöhen. Wofür das eingesetzt wird, entscheiden
+                die Teilnehmenden vor Ort.</p>
             <!--<div><a href="#section2" class="btn-scrollto-section-two">Section two</a></div>-->
-          </div>
         </div>
-      </div>
+    </div>
+</section><!-- End First Section -->
 
-    </section><!-- End First Section --> 
+<!-- ======= Second Section ======= -->
+<!-- ======= Hackathon Location & Video Section ======= -->
+<section class="responsive" id="section2">
+    <div>
+        <div>
+            <h1><span class="arrow">°</span> Vorstellung Location. <span class="h1-addition">Tumo Center</span></h1>
+            <p class="">
+                Das TUMO Center ist ein Hub für digitale Bildung von Jugendlichen. Es ist maximal
+                auf Coworking
+                ausgerichtet und bietet Platz für 150 Personen. Das mobile Setting der Einrichtung lässt eine
+                Anpassung für verschieden Anlässe zu.<br>
+                Es liegt in der Wilmersdorfer Straße, einer beliebten Einkaufsstraße mitten in der Stadt und
+                erstreckt sich über vier Stockwerke. Mehr Infos findest du auf:
+                <a href="https://berlin.tumo.de/">Tumo Center (Berlin)</a>
+            </p>
+        </div>
+    </div>
+    <div>
+        <video class="video" controls>
+            <source src="assets/videos/Digitalisierung_ So funktioniert digitale Bildung mit TUMO Berlin _ KfW Stories.mp4"
+                    type="video/mp4" class="video-section-with-glightbox center">
+            <!-- ======= Video of the second Section ======= -->
+        </video>
+    </div>
+</section><!-- End second Section -->
 
-    <main id="main">
-  
-      <!-- ======= Second Section ======= -->
-      <!-- ======= Hackathon Location & Video Section ======= -->
-      <section id="section2">
-        <div class="container d-flex align-items-center justify-content-between">
-          <div class="row">
-            <video controls>
-              <source src="assets/videos/Digitalisierung_ So funktioniert digitale Bildung mit TUMO Berlin _ KfW Stories.mp4" type="video/mp4" class="video-section-with-glightbox center"></source> <!-- ======= Video of the second Section ======= -->
-            </video>
-            <div class="second-block">
-              <h3>Location [Tumo Center]</h3>
-              <p>Das TUMO Center ist ein Hub für digitale Bildung von Jugendlichen. Es ist maximal auf Coworking ausgerichtet und bietet Platz für 150 Personen. Das mobile Setting der Einrichtung lässt eine Anpassung für verschieden Anlässe zu.<br> 
-                  Es liegt in der Wilmersdorfer Straße, einer beliebten Einkaufsstraße mitten in der Stadt und erstreckt sich über vier Stockwerke. Mehr Infos findest du auf: <a href="http://berlin.tumo.de/">Tumo [Berlin]</a>
-              </p>
-
-              <div class="icon-box">
-                <div class="icon"><i class="select-item"></i></div>
-                <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-              </div>
-  
-              <div class="icon-box">
-                <div class="icon"><i class="select-item"></i></div>
-                <h4 class="title"><a href="">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-              </div>
-  
-              <div class="icon-box">
-                <div class="icon"><i class="select-item"></i></div>
-                <h4 class="title"><a href="">Dine Pad</a></h4>
-                <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
-              </div>
+<!-- ======= Third Section ======= -->
+<section id="section3">
+    <div class="responsive" style="backdrop-filter: blur(10px);">
+        <div>
+            <div>
+                <h1><span class="arrow">°</span> Das solltest du mitbringen</h1>
+                <p>Für die Challenge sucht die KfW Talente, die echte Teamplayer sind und die eine sinnstiftende und
+                    nachhaltige Aufgabe suchen. <br> Dabei sind IT-Skills genauso wichtig, wie das Verständnis von
+                    Systemen. Im Einzelnen geht es bei der Challenge um dezidierte Skills in Operations, DevOPS,
+                    Coding, IT Security und Optimierungskompetenz in bestehenden Systemen. Ob
+                    Wirtschaftsinformatiker, IT-ler, Mathematiker, Physiker oder kompletter Quereinsteiger, bei KfW
+                    DevOps Challenge heißen wir euch alle willkommen!</p>
+                <div><a href="#section2" class="btn-scrollto-section-two">Section two</a></div>
             </div>
-          </div>
         </div>
-      </section><!-- End second Section -->
-  
-      <!-- ======= Third Section ======= -->
-      <section id="section3">
-        <div class="container d-flex align-items-center justify-content-between">
-          <div class="row">
-            <div class="third-block">
-              <h1>Deine Skills</h1>
-              <p>Für die Challenge sucht die KfW Talente, die echte Teamplayer sind und die eine sinnstiftende und nachhaltige Aufgabe suchen. <br> Dabei sind IT-Skills genauso wichtig, wie das Verständnis von Systemen. Im Einzelnen geht es bei der Challenge um dezidierte Skills in Operations, DevOPS, Coding, IT Security und Optimierungskompetenz in bestehenden Systemen. Ob Wirtschaftsinformatiker, IT-ler, Mathematiker, Physiker oder kompletter Quereinsteiger, bei KfW DevOps Challenge heißen wir euch alle willkommen!</p>
-              <div><a href="#section2" class="btn-scrollto-section-two">Section two</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="img-third-block">
-          <img src="assets/images/logoTwo.png" class="img-kfwlogo-zwei" alt=""> <!-- ======= Image of the third Section ======= -->
-        </div>
-      </section><!-- End third Section -->
+    </div>
+</section><!-- End third Section -->
 
-      <!-- ======= Fourth Section ======= -->
-      <section id="section4">
-        <div class="container d-flex align-items-center justify-content-between">
-          <div class="row">
-            <div class="fourth-block">
-              <h1>Benefits</h1>
-              <h4>Networking</h4>
-              <h4>Interessante Side Events</h4>
-              <h4>Coaching durch erfahrene KfW´ler</h4>
-              <h4>Gemeinsam ein nachhaltiges Projekt unterstützen</h4>
-              <div><a href="#section2" class="btn-scrollto-section-two">Section two</a></div>
-            </div>
-          </div>
-        </div>
-      </section><!-- End fourth Section -->
+<!-- ======= Fourth Section ======= -->
+<section class="responsive" id="section4">
+    <div>
+        <div>
+            <h1><span class="arrow">°</span> Das sind deine Benefits</h1>
+            <h2>Networking</h2>
+            <h2>Interessante Side Events</h2>
+            <h2>Coaching durch erfahrene KfW´ler</h2>
+            <h2>Gemeinsam ein nachhaltiges Projekt unterstützen</h2>
+            <div><a href="#section2" class="btn-scrollto-section-two">Section two</a></div>
 
-      <!-- ======= Fifth Section ======= -->
-      <section id="section5">
-        <div class="container d-flex align-items-center justify-content-between">
-          <div class="row">
-            <div class="fifth-block">
-              <h1>Agenda</h1>
-              <p>17-18 Uhr: Ankommen der Teilnehmerinnen und Teilnehmer<br>
+        </div>
+    </div>
+</section><!-- End fourth Section -->
+
+<!-- ======= Fifth Section ======= -->
+<section id="section5" class="responsive light-green-box">
+    <div>
+        <div>
+            <h1><span class="arrow">°</span> Programm</h1>
+            <p>17-18 Uhr: Ankommen der Teilnehmerinnen und Teilnehmer<br>
                 18 Uhr: Begrüßung<br>
                 18:30 Uhr: Präsentation der Challenge<br>
                 19 Uhr: Essen, Teambuilding & Start Teamwork Samstag, 9.7.2022<br>
@@ -144,22 +128,37 @@
                 12-13 Uhr: Dinner<br>
                 13-15 Uhr: Ergebnispräsenation & Audience Award<br>
                 15 Uhr: Verabschiedung und Heimreise<br>
-              </p>
-              <div><a href="#section2" class="btn-scrollto-section-two">Section two</a></div>
-            </div>
-          </div>
+            </p>
+            <div><a href="#section2" class="btn-scrollto-section-two">Section two</a></div>
         </div>
-      </section><!-- End fifth Section -->
-  
-    </main>
-    <!-- ======= footer.html ======= -->
-    <section id="section6"></section>
+    </div>
+</section><!-- End fifth Section -->
 
-    <!-- Back-to-top button reference -->
-    <button id="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#005A8C" fill-rule="evenodd" d="M21.854 17.148l-.706.706a.501.501 0 0 1-.706 0l-8.448-8.238-8.436 8.238a.5.5 0 0 1-.706 0l-.706-.706a.5.5 0 0 1 0-.706l9.495-9.296a.5.5 0 0 1 .706 0l9.507 9.296a.5.5 0 0 1 0 .706" style="fill: #005a8c;"/></svg></button>
-  
-    <!-- Template Main JS File, embendding the JS file (This element must have this position in the index.html!)-->
-    <script src="assets/js/Main.js"></script>
-    </body>
+<!-- ======= Sixth Section ======= -->
+<section class="responsive" id="section6">
+    <div>
+        <div class="">
+            <h1><span class="arrow">°</span> Anmeldung</h1>
+            <p>Du kannst dich bis zum 1.7. für den Hackathon anmelden. Hierfür haben wir ein entsprechendes
+                Template entwickelt, das du über Anmelde-Button erreichst
+            </p>
+        </div>
+    </div>
+</section><!-- End fifth Section -->
+
+
+<!-- ======= footer.html ======= -->
+<section id="section9"></section>
+
+<!-- Back-to-top button reference -->
+<button id="back-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M21.854 17.148l-.706.706a.501.501 0 0 1-.706 0l-8.448-8.238-8.436 8.238a.5.5 0 0 1-.706 0l-.706-.706a.5.5 0 0 1 0-.706l9.495-9.296a.5.5 0 0 1 .706 0l9.507 9.296a.5.5 0 0 1 0 .706"/>
+    </svg>
+</button>
+
+<!-- Template Main JS File, embendding the JS file (This element must have this position in the index.html!)-->
+<script src="assets/js/main.js"></script>
+</body>
 </html> 
 
