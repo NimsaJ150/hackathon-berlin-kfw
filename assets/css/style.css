@@ -53,6 +53,7 @@ h4 {
 h5 {
     font-size: 24px;
     line-height: 28px;
+<<<<<<< HEAD
 }
 
 h6 {
@@ -79,6 +80,34 @@ div {
     margin: 0;
 }
 
+=======
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+li, p, div {
+    font-size: 15px;
+    margin: 0 0 1.5rem 0;
+    line-height: 1.47;
+}
+
+a {
+    color: #5e7200;
+}
+
+small {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+div {
+    margin: 0;
+}
+
+>>>>>>> 0791d1f6de551de811b603f3a2b983c053d48a01
 /* Typography End */
 
 /*--------------------------------------------------------------
@@ -96,14 +125,25 @@ div {
     backdrop-filter: blur(20px);
 }
 
+<<<<<<< HEAD
 .img-kfwlogo {
     max-height: 70px;
+=======
+.header-block {
+    display: flex;
+    align-items: center;
+}
+
+.img-kfwlogo {
+    max-height: 65px;
+>>>>>>> 0791d1f6de551de811b603f3a2b983c053d48a01
     margin: 10px;
 }
 
 /*--------------------------------------------------------------
 # Navigation bar
 --------------------------------------------------------------*/
+<<<<<<< HEAD
 
 .nav-container{
     width: 100%;
@@ -120,6 +160,15 @@ div {
     max-width: 1720px;
     grid-template-columns: 0.2fr auto 1fr;
     margin: 0 auto;
+=======
+.navbar {
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    display: inline;
+    width: 100%;
+
+>>>>>>> 0791d1f6de551de811b603f3a2b983c053d48a01
 }
 
 .navbar ul {
@@ -129,9 +178,14 @@ div {
     text-align: center;
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; /* nowrap */
+=======
+    justify-content: center;
+    flex-wrap: nowrap;
+>>>>>>> 0791d1f6de551de811b603f3a2b983c053d48a01
 }
 
 .navbar li {
@@ -139,6 +193,7 @@ div {
     margin: 0 3.5%;
 }
 
+<<<<<<< HEAD
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -172,6 +227,16 @@ div {
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
     background: #F6F5ED;
+=======
+#nav-link a {
+    color: #00446e;
+    text-decoration: none;
+}
+
+#nav-link a:hover {
+    color: #5e7200;
+    text-decoration: underline;
+>>>>>>> 0791d1f6de551de811b603f3a2b983c053d48a01
 }
 
 
@@ -192,6 +257,7 @@ div {
 /* Mobile Layout */
 @media screen and (max-width: 800px) {
     .responsive {
+<<<<<<< HEAD
        display: block;
     }
 
@@ -281,6 +347,15 @@ div {
         transform: translateY(-8px) rotate(-45deg);
     }
  }   
+=======
+        display: block;
+    }
+
+    .responsive > * {
+        width: calc(100% - 2*20px);
+    }
+}
+>>>>>>> 0791d1f6de551de811b603f3a2b983c053d48a01
 
 /* Desktop Layout */
 @media screen and (min-width: 801px) {
@@ -356,6 +431,21 @@ div {
 
 .dark-green-box {
     background-color: #4E6E41;
+<<<<<<< HEAD
+}
+
+.blue-box {
+    background-color: #005A8C;
+}
+
+.green-box {
+    background-color: #7da416;
+}
+
+.arrow {
+    color: #7da416;
+=======
+>>>>>>> 0791d1f6de551de811b603f3a2b983c053d48a01
 }
 
 .blue-box {
@@ -370,6 +460,28 @@ div {
     color: #7da416;
 }
 
+/*--------------------------------------------------------------
+# Section 0 (Header Image) - style
+--------------------------------------------------------------*/
+#section0a {
+    height: 50vh;
+    min-height: 500px;
+    margin-top: 85px; /* offset menu */
+    background-image: url("/assets/images/imageOne.jpeg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+/*--------------------------------------------------------------
+# Section 1 - style
+--------------------------------------------------------------*/
+/*#section1 .row .first-block {
+    margin-top: 150px;
+}
+*/
 /*--------------------------------------------------------------
 # Section 0 (Header Image) - style
 --------------------------------------------------------------*/
@@ -437,7 +549,11 @@ div {
 
 #footer .social-links a {
     display: inline-block;
+<<<<<<< HEAD
     padding: 10px;
+=======
+    padding: 5px;
+>>>>>>> 0791d1f6de551de811b603f3a2b983c053d48a01
     width: 36px;
     height: 36px;
 
@@ -445,7 +561,10 @@ div {
 
 #footer .social-links a svg {
     fill: #005A8C;
+<<<<<<< HEAD
     fill-rule: evenodd;
+=======
+>>>>>>> 0791d1f6de551de811b603f3a2b983c053d48a01
     transition: 0.3s;
 }
 
