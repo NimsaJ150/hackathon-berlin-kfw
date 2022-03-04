@@ -370,40 +370,6 @@ div {
     color: #7da416;
 }
 
-.blue-box {
-    background-color: #005A8C;
-}
-
-.green-box {
-    background-color: #7da416;
-}
-
-.arrow {
-    color: #7da416;
-}
-
-/*--------------------------------------------------------------
-# Section 0 (Header Image) - style
---------------------------------------------------------------*/
-#section0a {
-    height: 50vh;
-    min-height: 500px;
-    margin-top: 85px; /* offset menu */
-    background-image: url("/assets/images/imageOne.jpeg");
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: multiply;
-}
-
-/*--------------------------------------------------------------
-# Section 1 - style
---------------------------------------------------------------*/
-/*#section1 .row .first-block {
-    margin-top: 150px;
-}
-*/
 /*--------------------------------------------------------------
 # Section 0 (Header Image) - style
 --------------------------------------------------------------*/
