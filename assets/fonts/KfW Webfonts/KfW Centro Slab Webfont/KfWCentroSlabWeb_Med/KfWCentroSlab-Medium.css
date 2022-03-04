@@ -1,0 +1,17 @@
+/* Webfont: KfWCentroSlab-Medium */@font-face {
+    font-family: 'KfWCentroSlabMedium';
+    src: url('KfWCentroSlab-Medium.eot'); /* IE9 Compat Modes */
+    src: url('KfWCentroSlab-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('KfWCentroSlab-Medium.woff') format('woff'), /* Modern Browsers */
+         url('KfWCentroSlab-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('KfWCentroSlab-Medium.svg#KfWCentroSlab-Medium') format('svg'); /* Legacy iOS */
+         url('KfWCentroSlab-Medium.woff2’) format('woff2’), /* Modern Browsers */
+    font-style: normal;
+    font-weight: normal;
+}
+
+p {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
