@@ -366,6 +366,14 @@ div {
     background-color: #7da416;
 }
 
+.brown-box {
+    background-color: #D5A846;
+}
+
+.charcoal-box{
+    background-color: #373f43;
+}
+
 .arrow {
     color: #7da416;
 }
@@ -418,6 +426,52 @@ div {
 /*--------------------------------------------------------------
 # Section 4 - style
 --------------------------------------------------------------*/
+
+.contentOne {
+    background-color: rgb(206, 139, 15);
+    margin-left: 25%;
+    margin-right: -200%;
+}
+
+.contentTwo {
+    background-color: #74b8e6;
+    margin-left: 25%;
+    margin-right: -200%;
+}
+
+.contentThree {
+    background-color: #afa230;
+    margin-left: 25%;
+    margin-right: -200%;
+}
+
+.contentFour {
+    background-color: #5e7200;
+    margin-left: 25%;
+    margin-right: -200%;
+}
+
+@media screen and (max-width: 800px) {
+    #content{
+        margin-top: 15%;
+        margin-left: 0%;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    #content{
+        margin-top: 15%;
+        margin-left: 30%;
+        margin-right: -135%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #content{
+        margin-right: -250%;
+    }
+}
 
 /*--------------------------------------------------------------
 # Section 5 - style
