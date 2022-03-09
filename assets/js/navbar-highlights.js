@@ -1,13 +1,14 @@
-//animation for linear degriant
+/*animation for linear degriant
 const sections = document.querySelectorAll("section");
 const bubble = document.querySelector("#bubble");
 const gradients = [
-    "linear-gradient(to right top, #519DC2, #005A8C)",           
-    "linear-gradient(to right top, #7da416, #5e7200)", 
-    "linear-gradient(to right top, #c5702b, #e4ad18)", 
-    "linear-gradient(to right top, #c5422b, #d82708)", 
-    "linear-gradient(to right top, #2bc5c5, #098e92)", 
-    "linear-gradient(to right top, #d3b81f, #e2ba09)"
+    "linear-gradient(to right top, #519DC2, #dee3e6)",           
+    "linear-gradient(to right top, #A4B419, #f5f5ce)", 
+    "linear-gradient(to right top, #f8f4ef, #ece9e2)", 
+    "linear-gradient(to right top, #F0EEE1, #b9b9b9)", 
+    "linear-gradient(to right top, #eee8f0, #5B2C6F)", 
+    "linear-gradient(to right top, #F0EEE1, #cccdce)",
+    "linear-gradient(to right top, #00446E, #def1fd)"
 ];
 
 const gradientDefault = [
@@ -15,7 +16,7 @@ const gradientDefault = [
 ];
 
 const options = {
-    threshold: 0.35 //0.7
+    threshold: 0.7
 };
 
 let observer = new IntersectionObserver(navCheck, options);
@@ -49,4 +50,4 @@ function navCheck(entries) {
 
 sections.forEach(section => {
     observer.observe(section);
-});
+}); */
