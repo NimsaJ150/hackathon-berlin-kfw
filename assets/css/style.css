@@ -438,9 +438,6 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
 /*--------------------------------------------------------------
 # Section 2 - style
 --------------------------------------------------------------*/
-/*-------------------
-# Video in Section 2
--------------------*/
 
 
 /*--------------------------------------------------------------
@@ -455,11 +452,6 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
     background-color: rgba(255, 255, 255, 0.85);
     background-blend-mode: lighten;
 }
-
-
-/*-------------------
-# Image in Section 1
--------------------*/
 
 /*--------------------------------------------------------------
 # Section 4 - style
@@ -635,11 +627,10 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
 
 .container5 {
     background-color: #373f43;
-    background-image: linear-gradient(315deg, #f2f5f7 64%,  #ffffff 0%);
-    padding: 2rem;
-    padding-bottom: 400px;
+    background-image: linear-gradient(315deg, #f2f5f7 54%,  #ffffff 0%);
+    padding-bottom: 50px;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .top-section {
@@ -661,7 +652,7 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
     width: 2px;
     top: -50px;
     bottom: -50px;
-    background-color: #000;
+    background-color: #005A8C;
     display: none;
 }
 
@@ -670,8 +661,8 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
     position: absolute;
     display: block;
     content: '';
-    height: 1rem;
-    width: 1rem;
+    height: 0rem;
+    width: 0rem;
     border-radius: 50%;
     background-color: #000;
     left: 50%;
@@ -707,14 +698,14 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
     height: 1rem;
     width: 1rem;
     border-radius: 50%;
-    background-color: #000;
+    background-color: #005A8C;
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
 }
 
 .container5 .content {
-    width: calc(50% - 2rem);
+    width: calc(50% - 2*10px);
 }
 
 .show-me:nth-child(n) {
@@ -722,9 +713,36 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
     opacity: 1;
 }
 
-.container5 h1 {
-    font-weight: 400;
+.container5 h2 {
+    font-size: 28px;
+    font-weight: 200;
     letter-spacing: 1px;
+    text-align: center;
+    z-index: 2;
+}
+
+.container5 h3 {
+    font-size: 22px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.container5 p {
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 15px;
+    text-align: center;
+}
+
+@media screen and (min-width: 200px) and (max-width: 800px) {
+    .container5 {
+        width: calc(100% - 2*10px);   
+    }
+
+    .container5 content{
+        padding-right: 25px;
+        border-right: 50px;   
+    }
 }
 /*--------------------------------------------------------------
 # Section 6 - style
@@ -816,6 +834,7 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
     transition-property: background-color, color;
     transition: 0.3s;
     backdrop-filter: blur(20px);
+    z-index: 3;
 }
 
 #back-to-top svg {
