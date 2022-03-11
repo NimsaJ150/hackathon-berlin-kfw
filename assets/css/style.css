@@ -532,7 +532,7 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
 
 
 .container4 .box .content h3 {
-    margin: 0 0 10px;
+    margin: 0 0 50px;
     padding: 0;
     color: #fff;
     font-size: 28px;
@@ -713,7 +713,7 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
     transform: translateX(-50%);
 }
 
-.content {
+.container5 .content {
     width: calc(50% - 2rem);
 }
 
