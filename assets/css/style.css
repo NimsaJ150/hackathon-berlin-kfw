@@ -21,58 +21,53 @@ h1, h2, h3, h4, h5, h6,
 li, p, div {
     font-family: KFWCentroSans, serif;
     font-weight: 300;
-    margin: 0 0 15px;
     color: #5A6166;
 }
 
-h1 {
+.title {
     font-size: 48px;
     line-height: 56px;
     color: #005A8C;
 }
 
-.h1-addition {
+/* TODO not being used? */
+.title-addition {
     color: #519DC2;
 }
 
+h1 {
+    font-size: 34px;
+    line-height: 38px;
+    color: #5A6166;
+}
+
 h2 {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 32px;
+    color: #005A8C;
 }
 
 h3 {
-    font-size: 32px;
-    line-height: 36px;
-}
-
-h4 {
-    font-size: 28px;
-    line-height: 32px;
-}
-
-h5 {
     font-size: 24px;
     line-height: 28px;
 }
 
-h6 {
-    font-size: 20px;
-    line-height: 24px;
-}
-
-li, p, div {
-    font-size: 15px;
-    margin: 0 0 1.5rem 0;
-    line-height: 1.47;
+li, p {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 0 15px;
 }
 
 a {
-    color: #5e7200;
+    color: #005A8C;
+    text-decoration: none;
+    line-height: inherit;
 }
 
-small {
-    font-size: 15px;
-    line-height: 17px;
+a:hover {
+    color: #A4B419;
+    text-decoration: underline;
+    transition: all 0.3s ease-out;
 }
 
 div {
@@ -97,8 +92,8 @@ div {
 }
 
 .img-kfwlogo {
-    max-height: 70px;
-    margin: 10px;
+    max-height: 60px;
+    margin: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -109,23 +104,16 @@ div {
     width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
 
 .navbar {
-    display: grid;
-    float: right;
-    display: inline;
     width: 100%;
-    height: 25px;
-    max-width: 1720px;
-    grid-template-columns: 0.2fr auto 1fr;
-    margin: 0 auto;
 }
 
-.navbar ul {
+.nav-menu {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding-left: 0;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -139,172 +127,49 @@ div {
     margin: 0 3.5%;
 }
 
-.nav-menu {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    list-style: none;
-    text-align: center;
-    width: 80%;
-    justify-self: end;
-}
-
-.nav-menu a {
-    position: relative;
-    color: #005A8C;
-    text-decoration: none;
-    width: auto;
-    text-align: center;
-}
-
-.nav-link{
-    display: inline-block;
-    }
-
-.nav-link:hover {
-    color: #5e7200;
-    text-decoration: underline;
-    transition: all 0.3s ease-out;
-}
-
-.menu-toggle .bar{
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background: #F6F5ED;
-}
-
-/* Linear gradient
-It changes the background color
-
-.intro {
-background: linear-gradient(to right top, #519DC2, #dee3e6);
-}
-
-.location {
-    background: linear-gradient(to right top, #A4B419, #f5f5ce);
-}
-
-#skills{
-    background: linear-gradient(to right top, #f8f4ef, #ece9e2);
-}
-
-.benefits{
-    background: linear-gradient(to right top, #b1beb5, #e4e4e4);
-}
-
-.agenda{
-    background: linear-gradient(to right top, #eee8f0, #5B2C6F);
-}
-
-.faq {
-    background: linear-gradient(to right top, #F0EEE1, #cccdce);
-}
-
-.contact{
-    background: linear-gradient(to right top, #00446E, #def1fd);
-}
-
-#bubble{
-    position: fixed;
-    z-index: -2;
-    background: linear-gradient(to right top, #519DC2, #005A8C);
-    transform: scale(2);
-    transition: all 0.5s ease;
-} */
-
-/*--------------------------------------------------------------
-# General Sections
---------------------------------------------------------------*/
-
-/* General Styling */
-.responsive {
-    width: 100%;
-    padding: 100px 0;
-}
-
-.responsive > * {
-    padding-inline: 20px;
+#mobile-menu {
+    display: none;
 }
 
 /* Mobile Layout */
-@media screen and (max-width: 800px) {
-    .responsive {
-       display: block;
-    }
-
-    .responsive > * {
-       width: calc(100% - 2*20px);
-    }
-
-    .nav-container{
-        position: relative;
-    }
-
-    .nav-menu{
-        display: grid;
-        grid-template-columns: 1;
-        background: #7da416;
-        margin: 0;
-        width: 25%;
-        position: fixed;
-        top: 80px;
-        right: 15px;
-        left: -100%;  /* these elements fade the navbar */
-        opacity: 0;   /*these elements fade the navbar */
-        transition: all 0.5s ease;
-    }
-    .nav-menu a {
-        position: relative;
-        color: #d2e4f0;
-        text-decoration: none;
-        width: auto;
-        text-align: center;
-    }
-
-    .nav-menu.active{
-        background: #556672;
-        left: 70%;
-        opacity: 1;
-        transition: all 0.5s ease;
-    }
-
-    .nav-link{
-        text-align: center;
-        line-height: 60px;
-        width: 100%;
-        display: table;
-        padding: 0 20px;
-    }
-
-    .nav-link:hover{
-        background-color: #519DC2;
-        color: #5A6166;
-        border: none;
-        padding: 0 20px;
-        border-radius: 0;
-        transition: all 0.5s ease-out;
-    }
-    .navbar{
-        width: 100%;
-    }
-
+@media screen and (max-width: 850px) {
     #mobile-menu {
-        position: absolute;
-        top: 30%;
-        right: 15%;
-        transform: translate(25%, 30%);
-        
-    }
-
-    .menu-toggle .bar{
         display: block;
-        cursor: pointer;
-        background-color: #005A8C;
     }
 
-    .menu-toggle:hover{
-        cursor: pointer;
+    .button.img-kfwlogo {
+        display: none;
+    }
+
+    .nav-menu {
+        top: 100vh;
+        left: 0;
+        width: 100vw;
+        height: calc(100vh - 120px);
+        background: #F0EEE1;
+        margin: 0;
+        position: fixed;
+        flex-direction: column;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-menu.active {
+        top: 120px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-link {
+        margin: 2vh 0;
+        display: inline-block;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        display: block;
+        background-color: #005A8C;
     }
 
     #mobile-menu.is-active .bar:nth-child(1) {
@@ -314,14 +179,42 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
     #mobile-menu.is-active .bar:nth-child(2) {
         opacity: 0;
     }
-    
+
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
- }   
+}
+
+/*--------------------------------------------------------------
+# General Sections
+--------------------------------------------------------------*/
+
+/* General Styling */
+section {
+    padding: 100px 0;
+}
+
+.responsive {
+    width: 100%;
+}
+
+.responsive > * {
+    padding-inline: 20px;
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 850px) {
+    .responsive {
+        display: block;
+    }
+
+    .responsive > * {
+        width: calc(100% - 2 * 20px);
+    }
+}
 
 /* Desktop Layout */
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 851px) {
     .responsive {
         display: inline-flex;
     }
@@ -348,30 +241,22 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
     }
 }
 
-.example-box {
-    height: calc(100% - 40px - 40px); /* Make both boxes the same height */
-    margin: 20px;
-    padding: 20px;
-    border-radius: 20px;
-    background: #005A8C;
-    color: white;
-}
-
 .button {
     cursor: pointer;
-    padding: 7px 20px;
-    background: #7da416;
-    color: #ffffff;
-    border: 1px solid #5e7200;
-    border-radius: 100px;
-    transition: 0.3s;
+    padding: 1.2rem 2.5rem 1.2rem 2rem;
+    background: #005A8C;
+    color: #FFFFFF;
+    border: 1px solid #005A8C;
+    border-radius: 4px;
+    transition: 0.2s;
+    text-align: center;
     text-decoration: none;
+    line-height: /*1.4;*/ calc(60px - 2 * 1.2rem - 2px);
 }
 
 .button:hover {
-    background: transparent;
-    color: #5e7200;
-    text-decoration: none;
+    background: #00446E;
+    color: #FFFFFF;
 }
 
 .image {
@@ -379,7 +264,7 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
 }
 
 .img-wrap {
-    line-height: 0;
+    line-height: inherit;
 }
 
 .video {
@@ -388,32 +273,23 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
 }
 
 .light-green-box {
-    background-color: #F6F5ED;
+    background-color: #F0EEE1;
 }
 
-
-.dark-green-box {
-    background-color: #4E6E41;
+.light-blue-box {
+    background-color: rgba(81, 157, 194, 0.2);
 }
 
-.blue-box {
-    background-color: #005A8C;
+.petrol-box {
+    background-color: #13556F;
 }
 
-.green-box {
-    background-color: #7da416;
-}
-
-.brown-box {
-    background-color: #D5A846;
-}
-
-.charcoal-box{
-    background-color: #373f43;
+.white-box {
+    background-color: #FFFFFF;
 }
 
 .arrow {
-    color: #7da416;
+    color: #A4B419;
 }
 
 /*--------------------------------------------------------------
@@ -422,7 +298,7 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
 #section0a {
     height: 50vh;
     min-height: 500px;
-    margin-top: 85px; /* offset menu */
+    margin-top: 120px; /* offset menu */
     background-image: url("/assets/images/imageOne.jpeg");
     background-position: center;
     background-size: cover;
@@ -443,8 +319,8 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
 /*--------------------------------------------------------------
 # Section 3 - style
 --------------------------------------------------------------*/
-#section3 {
-    background-image: url("/assets/images/imageOne.jpeg");
+#skills {
+    background-image: url("/assets/images/Meetingsituation_kleine Datei.jpg");
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
@@ -456,38 +332,30 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
 /*--------------------------------------------------------------
 # Section 4 - style
 --------------------------------------------------------------*/
+.benefit-container {
+    width: 100%;
+    display: inline-flex;
+}
 
-.container4 {
+.benefit-box {
     position: relative;
-    margin: 240px auto;
-}
-
-.container4 .box {
-    position: relative; 
-    /* Diese müssten vlt. in den Media screen gebaut werden
-      width: calc(300px - 2px);
-      height: calc(300px - 30px);
-    */
-    background: #000;
-    float: left;
     margin: 15px;
-    box-sizing: border-box;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 4px;
+    width: 100%;
+    height: 270px;
 }
 
-.container4 .box .icon {
+.benefit-box .icon {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /*background: #7da416;*/
-    transition: 0.5s;
-    z-index: 0;
+    transition: 0.3s ease-in-out;
 }
 
-.container4 .box:hover .icon {
+.benefit-box:hover .icon {
     top: 15px;
     left: calc(50% - 30px);
     width: 60px;
@@ -495,195 +363,67 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
     border-radius: 50%;
 }
 
-.container4 .box .icon svg {
+.benefit-box .icon svg {
     position: absolute;
     top: 55%;
     left: 55%;
     transform: translate(-50%, -50%);
-    transition: 0.5s;
-    color: #fff;
+    transition: 0.3s ease-in-out;
 }
 
-.container4 .box .content {
+.benefit-box .content {
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, -0%);
+    transform: translateX(-50%);
     height: calc(100% - 100px);
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
-    transition: 0.5s;
+    transition: 0.3s ease-in-out;
     opacity: 0;
 }
 
-.container4 .box:hover .content {
+.benefit-box:hover .content {
     top: 100px;
     opacity: 1;
 }
-
-
-.container4 .box .content h3 {
-    margin: 0 0 50px;
-    padding: 0;
-    color: #fff;
-    font-size: 28px;
-}
-
-.container4 .box .content p {
-    margin: 0 0 1.5rem 0;
-    padding: 0px;
-    font-size: 15px;
-    line-height: 1.47;
-    color: #fff;
-}
-
-
-.container4 .box:nth-child(1) {
-    background-color: #519DC2;
-}
-
-.container4 .box:nth-child(1) .icon {
-    background-color: #eceee6;
-}
-
-.container4 .box:nth-child(2) {
-    background-color: rgb(51, 20, 34);
-}
-
-.container4 .box:nth-child(2) .icon {
-    background-color: #fafafa;
-}
-
-.container4 .box:nth-child(3) {
-    background-color: #519DC2;
-}
-
-.container4 .box:nth-child(3) .icon {
-    background-color: #eceee6;
-}
-
-.container4 .box:nth-child(4) {
-    background-color: rgb(51, 20, 34);
-}
-
-.container4 .box:nth-child(4) .icon {
-    background-color: #fafafa;
-}
-
-
-
-@media screen and (min-width: 200px) and (max-width: 800px) {
-    .container4 {
-        position: relative;
-        width: calc(100% - 2*30px);
-        height: 1000px;
-        bottom: 150px;
-        margin: 0;
-    }
-
-    .container4 .box { 
-        width: calc(100% - 2*30px);
-        height: calc(300px - 30px);
-    }
-
-    .container4 .box:nth-child(1) .content {
-        padding-top: 7.5%;
-    }
-    
-    .container4 .box:nth-child(2) .content {
-        padding-top: 6%;
-    }
-}
-
-@media screen and (min-width: 801px) {
-    .container4 {
-        position: relative;
-        width: calc(100% - 2*30px);
-        bottom: 80px;
-        height: 200px;
-        margin: 0;
-    }
-
-    .container4 .box {
-        width: calc(100% - 2*30px);
-        height: calc(300px - 30px);
-    }
-
-    .container4 .box:nth-child(1) .content {
-        padding-top: 15%;
-    }
-    
-    .container4 .box:nth-child(2) .content {
-        padding-top: 12%;
-    }
-}
-
-
 
 /*--------------------------------------------------------------
 # Section 5 - style
 --------------------------------------------------------------*/
 
-.container5 {
-    background-color: #373f43;
-    background-image: linear-gradient(315deg, #f2f5f7 54%,  #ffffff 0%);
-    padding-bottom: 50px;
-    margin: 0 auto;
-    max-width: 1000px;
-}
-
-.top-section {
-    text-align: center;
-    padding: 2rem 0;
-    max-width: 600px;
-    margin: 0 auto;
+#programm {
+    background-image: linear-gradient(315deg, #F0EEE1 55%, #ffffff 0%);
+    overflow-x: hidden;
 }
 
 .timeline {
     position: relative;
     min-height: 150px;
+    text-align: center;
 }
 
 .line {
     position: absolute;
-    z-index: 2;
     left: calc(50% - 1px);
     width: 2px;
-    top: -50px;
-    bottom: -50px;
+    top: -25px;
     background-color: #005A8C;
     display: none;
-}
-
-.line:before,
-.line:after {
-    position: absolute;
-    display: block;
-    content: '';
-    height: 0rem;
-    width: 0rem;
-    border-radius: 50%;
-    background-color: #000;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.line:after {
-    bottom: 0;
 }
 
 .section {
     display: flex;
     opacity: 0;
     transform: translateX(-100%);
-    transition: 600ms ease;
+    transition: 0.3s ease;
     position: relative;
-    z-index: 1;
     margin: 50px 0;
     padding: 1rem;
     border-radius: 1rem;
     align-items: center;
+    text-align: center;
     min-height: 300px;
 }
 
@@ -704,8 +444,8 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
     transform: translateX(-50%);
 }
 
-.container5 .content {
-    width: calc(50% - 2*10px);
+.timeline-container .content {
+    width: calc(50% - 2 * 10px);
 }
 
 .show-me:nth-child(n) {
@@ -713,37 +453,26 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
     opacity: 1;
 }
 
-.container5 h2 {
-    font-size: 28px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    text-align: center;
-    z-index: 2;
-}
-
-.container5 h3 {
-    font-size: 22px;
-    font-weight: 200;
-    text-align: center;
-}
-
-.container5 p {
-    font-size: 17px;
-    font-weight: 200;
-    line-height: 15px;
-    text-align: center;
-}
-
-@media screen and (min-width: 200px) and (max-width: 800px) {
-    .container5 {
-        width: calc(100% - 2*10px);   
+@media screen and (max-width: 850px) {
+    .section:nth-child(odd) {
+        flex-direction: row;
+        transform: translateX(100%);
     }
 
-    .container5 content{
-        padding-right: 25px;
-        border-right: 50px;   
+    .line {
+        left: calc(95% - 2px);
+    }
+
+    .bead {
+        left: 95%;
+        transform: translateX(-50%);
+    }
+
+    .timeline-container .content {
+        width: calc(100% - 2 * 10px);
     }
 }
+
 /*--------------------------------------------------------------
 # Section 6 - style
 --------------------------------------------------------------*/
@@ -756,24 +485,12 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
 # Section 8 - style
 --------------------------------------------------------------*/
 
-
-@media screen and (min-width: 150px) and (max-width: 800px) {
-    #googleMaps{
-        width: calc(100% - 2*50px);
-    }
+#googleMaps {
+    width: 100%;
+    height: 50vh;
+    border: 0;
 }
 
-@media screen and (min-width: 801px) and (max-width: 1199px) {
-    #googleMaps{
-        width: calc(100% - 2*50px);
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    #googleMaps{
-        width: calc(100% - 2*50px);
-    }
-}
 /*--------------------------------------------------------------
 # footer / Section 9 - style
 --------------------------------------------------------------*/
