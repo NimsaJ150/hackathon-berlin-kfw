@@ -274,7 +274,7 @@ section {
 
 .video {
     max-width: 100%;
-    height: min-content;
+    /*height: min-content;*/
 }
 
 .light-green-box {
@@ -343,7 +343,8 @@ section {
 
     #primary-text-box {
         float: right;
-        margin-top: calc(6rem + 120px);
+        margin-top: 10vh;
+        margin-right: 40px;
         width: 33.4%;
         padding: 2.4rem 4rem;
         border-bottom-left-radius: 14px;
