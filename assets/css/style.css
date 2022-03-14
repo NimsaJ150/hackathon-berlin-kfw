@@ -752,6 +752,30 @@ background: linear-gradient(to right top, #519DC2, #dee3e6);
 # Section 7 - style
 --------------------------------------------------------------*/
 
+details > summary {
+    border: none;
+    cursor: pointer;
+    list-style: none;
+    display: block;
+}
+
+summary:before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 28 15'%3E%3Cpath fill='%23005A8C' fill-rule='evenodd' d='M19.5 11H13V4.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5V11H4.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5H11v6.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V13h6.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5' style='fill: %23005a8c;'/%3E%3C/svg%3E");
+}
+
+details[open] summary:before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 28 15'%3E%3Cpath fill='%23005A8C' fill-rule='evenodd' d='M19.5 11h-15a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5' style='fill: %23005a8c%3B'/%3E%3C/svg%3E");
+}
+
+details > p {
+    margin: 2rem;
+}
+
+.distance {
+    padding: 20px 10px 30px 10px;
+}
+  
+
 /*--------------------------------------------------------------
 # Section 8 - style
 --------------------------------------------------------------*/
