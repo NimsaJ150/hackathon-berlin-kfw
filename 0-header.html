@@ -1,20 +1,27 @@
 <!-- ======= Header ======= -->
 <header id="header" class="header">
-    <div class="header-block img-wrap">
+    <div class="nav-container img-wrap">
         <a href="https://www.kfw.de/kfw.de.html">
             <img src="assets/images/headerLogo.png" alt="" class="img-kfwlogo">
         </a>
 
         <!-- ======= Navigation bar ======= -->
-        <nav id="navbar" class="navbar">
-            <ul id="nav-link">
-                <li><a class="nav-link" href="#section1">Intro</a></li>
-                <li><a class="nav-link" href="#section2">Location</a></li>
-                <li><a class="nav-link" href="#section3">Deine Skills</a></li>
-                <li><a class="nav-link" href="#section4">Benefits</a></li>
-                <li><a class="nav-link" href="#section5">Agenda</a></li>
-                <li><a class="nav-link" href="#section6">Kontakt</a></li>
+        <nav class="navbar">
+            <ul class="nav-menu"><li><a class="nav-link" data-page="section1" href="#location">Location</a></li>
+                <li><a class="nav-link" data-page="section2" href="#skills">Deine Skills</a></li>
+                <li><a class="nav-link" data-page="section3" href="#benefits">Benefits</a></li>
+                <li><a class="nav-link" data-page="section4" href="#programm">Programm</a></li>
+                <li><a class="nav-link" data-page="section6" href="#faq">FAQ</a></li>
+                <li><a class="nav-link" data-page="section7" href="#contact">Kontakt</a></li>
             </ul>
-        </nav><!-- .navbar -->
+        </nav>
+        <a class="button img-kfwlogo" href="#registration" style="min-width: 121.64px;"><span class="arrow-right" aria-hidden="true"></span>Anmeldung</a>
+        <div class="img-kfwlogo" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </div>
+    <script src="assets/js/navbar.js"></script>
+    <!-- <script src="assets/js/navbar-highlights.js"></script> -->
 </header><!-- End Header -->
