@@ -74,7 +74,7 @@ div {
     margin: 0;
 }
 
-.important {
+.important, summary {
     color: #005A8C;
     font-size: 20px;
     line-height: 24px;
@@ -581,11 +581,16 @@ section {
 /*--------------------------------------------------------------
 # Section 7 - style
 --------------------------------------------------------------*/
+details {
+    padding: 10px;
+}
+
 details > summary {
     border: none;
     cursor: pointer;
     list-style: none;
     display: block;
+    margin: 0 0 15px;
 }
 
 summary:before {
@@ -597,12 +602,13 @@ details[open] summary:before {
 }
 
 details > p {
-    margin: 2rem;
+    padding-left: 24px;
 }
 
-.distance {
-    padding: 20px 10px 30px 10px;
+hr {
+    margin-inline: 40px;
 }
+
 /*--------------------------------------------------------------
 # Section 8 - style
 --------------------------------------------------------------*/
