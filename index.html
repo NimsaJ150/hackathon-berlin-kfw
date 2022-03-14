@@ -28,29 +28,41 @@
 <!-- ======= Header.html ======= -->
 <div id="header-section"></div>
 
-<!-- ======= Start Section in CSS ======= -->
-<section id="section0a" class="responsive">
-    <div>
-        <div class="img-wrap">
-            <a class="button" href="#section6">Zur Anmeldung</a>
-            <!-- ======= image of the Start Section ======= -->
+<!-- ======= First Section ======= -->
+<div id="intro" class="parallax">
+    <div class="parallax__group">
+        <div class="parallax__layer parallax__layer--back">
+            <img class="background-element" src="assets/images/Hintergrund.png">
+        </div>
+        <div class="parallax__layer parallax__layer--fore">
+            <img class="fore-element"
+                 src="assets/images/Vordergrund%20neu.png">
+        </div>
+        <div class="parallax__layer parallax__layer--base">
+            <div id="primary-text-container-desktop" class="wrapper">
+                <div id="primary-text-box">
+                    <h1 class="title"><span class="arrow">°</span> KfW Dev Ops Challenge</h1>
+                    <p class="countdown-text"></p>
+                </div>
+            </div>
         </div>
     </div>
-</section><!-- End Start Section in CSS -->
+</div>
+
+<!-- End First Section -->
+
+<section id="primary-text-container-mobile" class="wrapper light-green-box" data-index="0">
+    <h1 class="title"><span class="arrow">°</span> KfW Dev Ops Challenge</h1>
+    <p class="countdown-text"></p>
+</section><!-- End First Section -->
 
 <!-- ======= First Section ======= -->
-<section id="intro" class="responsive light-green-box" data-index="0">
-    <div>
-        <div>
-            <h1 class="title"><span class="arrow">°</span> KfW Dev Ops Challenge</h1>
-            <p>Die KfW Dev Ops Challenge ist ein dreitägiger Hackathon, bei dem interdisziplinäre Teams in
-                verschiedenen Aufgabenstellungen miteinander konkurrieren. Dabei unterscheidet sich die Dev Ops
-                Challenge von anderen Hackathons insbesondere in der Prämierung. Alle Teams tragen durch ihre
-                Performance dazu bei, das Sustainebility Budget zu erhöhen. Wofür das eingesetzt wird, entscheiden
-                die Teilnehmenden vor Ort.</p>
-            <!--<div><a href="#section2" class="btn-scrollto-section-two">Section two</a></div>-->
-        </div>
-    </div>
+<section id="explanation" class="wrapper white-box" data-index="0">
+    <p>Die KfW Dev Ops Challenge ist ein dreitägiger Hackathon, bei dem interdisziplinäre Teams in
+        verschiedenen Aufgabenstellungen miteinander konkurrieren. Dabei unterscheidet sich die Dev Ops
+        Challenge von anderen Hackathons insbesondere in der Prämierung. Alle Teams tragen durch ihre
+        Performance dazu bei, das Sustainability Budget zu erhöhen. Wofür das eingesetzt wird, entscheiden
+        die Teilnehmenden vor Ort.</p>
 </section><!-- End First Section -->
 
 <!-- ======= Second Section ======= -->
@@ -80,26 +92,37 @@
 </section><!-- End second Section -->
 
 <!-- ======= Third Section ======= -->
-<section id="skills" data-index="2">
-    <div class="responsive" style="backdrop-filter: blur(20px);">
-        <div>
+<div id="skills-background">
+    <section id="skills" data-index="2" class="blur">
+        <div class="wrapper">
+            <h1>Das solltest du mitbringen</h1>
+        </div>
+        <div class="responsive">
             <div>
-                <h1>Das solltest du mitbringen</h1>
-                <p>Für die Challenge sucht die KfW Talente, die echte Teamplayer sind und die eine sinnstiftende und
-                    nachhaltige Aufgabe suchen. <br> Dabei sind IT-Skills genauso wichtig, wie das Verständnis von
-                    Systemen. Im Einzelnen geht es bei der Challenge um dezidierte Skills in Operations, DevOPS,
+                <img class="image" src="assets/images/Meetingsituation_kleine%20Datei.jpg" alt="">
+            </div>
+            <div>
+                <p>
+                    Für die Challenge sucht die KfW Talente, die echte Teamplayer sind und die eine
+                    sinnstiftende und
+                    nachhaltige Aufgabe suchen. <br> Dabei sind IT-Skills genauso wichtig, wie das
+                    Verständnis von
+                    Systemen. Im Einzelnen geht es bei der Challenge um dezidierte Skills in Operations,
+                    DevOPS,
                     Coding, IT Security und Optimierungskompetenz in bestehenden Systemen. Ob
-                    Wirtschaftsinformatiker, IT-ler, Mathematiker, Physiker oder kompletter Quereinsteiger, bei KfW
-                    DevOps Challenge heißen wir euch alle willkommen!</p>
+                    Wirtschaftsinformatiker, IT-ler, Mathematiker, Physiker oder kompletter Quereinsteiger,
+                    bei KfW
+                    DevOps Challenge heißen wir euch alle willkommen!
+                </p>
             </div>
         </div>
-    </div>
-</section><!-- End third Section -->
+    </section>
+</div><!-- End third Section -->
 
 <!-- ======= Fourth Section ======= -->
 <section id="benefits" class="petrol-box" data-index="3">
-    <div class="responsive">
-        <h1>Das sind deine Benefits</h1>
+    <div class="wrapper">
+        <h1 class="light-green-text">Das sind deine Benefits</h1>
     </div>
     <div class="responsive">
         <div>
@@ -113,8 +136,7 @@
                         </svg>
                     </div>
                     <div class="content">
-                        <h2>Networking</h2>
-                        <p></p>
+                        <p class="important">Networking</p>
                     </div>
                 </div>
 
@@ -128,8 +150,7 @@
                         </svg>
                     </div>
                     <div class="content">
-                        <h2>Interessante Side Events</h2>
-                        <p></p>
+                        <p class="important">Interessante Side Events</p>
                     </div>
                 </div>
             </div>
@@ -144,8 +165,7 @@
                         </svg>
                     </div>
                     <div class="content">
-                        <h2>Coaching durch erfahrene KfW´ler</h2>
-                        <p></p>
+                        <p class="important">Coaching durch erfahrene KfW´ler</p>
                     </div>
                 </div>
 
@@ -159,8 +179,7 @@
                         </svg>
                     </div>
                     <div class="content">
-                        <h2>Gemeinsam nachhaltiges Projekt unterstützen</h2>
-                        <p></p>
+                        <p class="important">Gemeinsam nachhaltiges Projekt unterstützen</p>
                     </div>
                 </div>
             </div>
@@ -171,10 +190,8 @@
 <!-- ======= Fifth Section ======= -->
 <section id="programm" data-index="4">
     <div>
-        <div class="responsive">
-            <div>
-                <h1>Programm</h1>
-            </div>
+        <div class="wrapper">
+            <h1>Programm</h1>
         </div>
         <div class="responsive">
             <div>
@@ -182,11 +199,16 @@
                     <p>Die Veranstaltung findet vom 08.-10. Juli im Tumo Center in der Wilmersdorfer Straße statt.
                         Das
                         Programm gestaltet sich folgendermaßen:</p>
-                    <h2>Erfolgreiche Anmeldung</h2>
                     <div>
-
                         <div class="timeline">
                             <div class="line"></div>
+                            <div class="section">
+                                <div class="bead"></div>
+                                <div class="content">
+                                    <h2>Erfolgreiche Anmeldung</h2>
+                                </div>
+                            </div>
+
                             <div class="section">
                                 <div class="bead"></div>
                                 <div class="content">
@@ -243,13 +265,16 @@
 </section><!-- End fifth Section -->
 
 <!-- ======= Sixth Section ======= -->
-<section id="registration" class="light-blue-box responsive" data-index="5">
-    <div>
-        <div class="">
-            <h1>Anmeldung</h1>
-            <p>Du kannst dich bis zum 1.7. für den Hackathon anmelden. Hierfür haben wir ein entsprechendes
-                Template entwickelt, das du über Anmelde-Button erreichst. <a href="">Anmeldung</a>
-            </p>
+<section id="registration" class="white-box" data-index="5">
+    <div class="wrapper">
+        <h1>Anmeldung</h1>
+        <p>Du kannst dich bis zum 1.7. für den Hackathon anmelden. Hierfür haben wir ein entsprechendes
+            Template entwickelt, das du über Anmelde-Button erreichst:
+        </p>
+    </div>
+    <div class="wrapper">
+        <div>
+            <a class="button" href=""><span class="arrow-right"></span>Anmeldung</a>
         </div>
     </div>
 </section><!-- End sixth Section -->
@@ -266,26 +291,67 @@
 </section><!-- End seventh Section -->
 
 <!-- ======= Eigth Section ======= -->
-<section id="contact" data-index="7">
-    <div>
-        <div class="responsive">
+<div id="contact-background">
+    <section id="contact" data-index="7" class="blur">
+        <div class="wrapper">
             <h1>Kontakt</h1>
-            <p></p>
+            <p>Unser Team ist jederzeit für euch da! Bei Fragen kontaktiere uns unter: email@email.com</p>
+
         </div>
         <div class="responsive">
             <div>
-                <iframe id="googleMaps"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.438336538131!2d13.303996115998618!3d52.507405944914495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a85161839e53c3%3A0xe656925fd89d0b4a!2sTUMO%20Berlin!5e0!3m2!1sde!2sde!4v1646810676118!5m2!1sde!2sde"
-                        allowfullscreen="" loading="lazy">
-                </iframe>
+                <div class="benefit-container">
+                    <div class="benefit-box light-blue-box">
+                        <img class="contact-image icon" src="assets/images/Sven%20Roth.jpg">
+                        <div class="content">
+                            <h2>Sven Roth</h2>
+                        </div>
+                    </div>
+
+                    <div class="benefit-box light-blue-box">
+                        <img class="contact-image icon" src="assets/images/Shel%20Wie%20Wong.jpg">
+
+                        <div class="content">
+                            <h2>Shel Wie Wong</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefit-container">
+                    <div class="benefit-box light-blue-box">
+                        <img class="contact-image icon" src="assets/images/Sara_da_Costa.png">
+
+                        <div class="content">
+                            <h2>Sara da Costa</h2>
+                        </div>
+                    </div>
+
+                    <div class="benefit-box light-blue-box">
+                        <img class="contact-image icon" src="assets/images/Arnaud_Thien.png">
+
+                        <div class="content">
+                            <h2>Arnaud Thien</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section><!-- End eigth Section -->
+        <div class="wrapper">
+            <p>Hier findest du uns:</p>
+        </div>
+        <div class="wrapper">
+            <div>
+                <iframe id="googleMaps"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33298.411065724395!2d13.323701921050228!3d52.511890670698385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a85161839e53c3%3A0xe656925fd89d0b4a!2sTUMO%20Berlin!5e0!3m2!1sde!2sde!4v1647178374308!5m2!1sde!2sde"
+                        allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+</div><!-- End eigth Section -->
 
 
 <!-- ======= footer.html ======= -->
 <div id="footer-section"></div>
+
 
 <!-- Back-to-top button reference -->
 <button id="back-to-top">
@@ -296,6 +362,8 @@
 
 <!-- Template Main JS File, embendding the JS file (This element must have this position in the index.html!)-->
 <script src="assets/js/back-to-top-button.js"></script>
+<script src="assets/js/timer.js"></script>
+<script src="assets/js/parallax.js"></script>
 </body>
 </html> 
 
