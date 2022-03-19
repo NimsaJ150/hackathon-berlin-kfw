@@ -581,7 +581,19 @@ section {
 /*--------------------------------------------------------------
 # Section 7 - style
 --------------------------------------------------------------*/
+
+.align-start {
+    align-items: start;
+}
+
+.faq-container {
+    width: 100%;
+    align-items: start;
+    flex-direction: column;
+}
+
 details {
+    width: 100%;
     padding: 10px;
 }
 
@@ -605,9 +617,7 @@ details > p {
     padding-left: 24px;
 }
 
-hr {
-    margin-inline: 40px;
-}
+
 
 /*--------------------------------------------------------------
 # Section 8 - style
