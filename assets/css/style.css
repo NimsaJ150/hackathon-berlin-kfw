@@ -420,10 +420,6 @@ section {
 /*--------------------------------------------------------------
 # Section 4 - style
 --------------------------------------------------------------*/
-.benefit-container {
-    width: 100%;
-    display: inline-flex;
-}
 
 .benefit-box {
     position: relative;
@@ -637,11 +633,21 @@ details > p {
     background-blend-mode: lighten;
 }
 
+.team-container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.team-box {
+    max-width: 270px;
+}
+
 .contact-image {
     object-fit: cover;
     object-position: top;
-}
 
+}
 
 #googleMaps {
     width: 100%;
