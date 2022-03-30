@@ -30,10 +30,6 @@ li, p, div {
     color: #005A8C;
 }
 
-/* TODO not being used? */
-.title-addition {
-    color: #519DC2;
-}
 
 h1 {
     font-size: 34px;
@@ -200,6 +196,10 @@ section {
     padding: 100px 0;
 }
 
+#main-part {
+    padding-top: 124px;
+}
+
 .responsive, .wrapper {
     width: 100%;
     overflow: hidden;
@@ -294,9 +294,6 @@ section {
 .white-box {
     background-color: #FFFFFF;
 }
-.green-box {
-    background-color: #A4B419;
-}
 
 .light-green-text {
     color: #F0EEE1;
@@ -327,8 +324,8 @@ section {
 @media screen and (max-width: 850px) {
 
     #primary-text-container-desktop {
-         display: none;
-     }
+        display: none;
+    }
 
     #primary-text-box {
         position: relative;
@@ -363,30 +360,35 @@ section {
 .parallax {
     /* perspective: 10px;*/
     width: 100vw;
-    height: auto;/*75vh;*/
+    height: auto; /*75vh;*/
     top: 124px;
     /* overflow-x: hidden;
     overflow-y: scroll;*/
 }
+
 .parallax__group {
     position: relative;
     top: 124px;
     height: 75vh;
     /*transform-style: preserve-3d;*/
 }
+
 .parallax__layer {
     position: relative;
     display: block;
     left: 0;
 }
+
 .parallax__layer--base {
     width: 100%;
     z-index: -1;
 }
+
 .parallax__layer--back {
     width: 100%;
     z-index: -1;
 }
+
 .parallax__layer--fore {
     width: 100%;
     top: 20px;
@@ -619,7 +621,6 @@ details[open] summary:before {
 details > p {
     padding-left: 24px;
 }
-
 
 
 /*--------------------------------------------------------------
