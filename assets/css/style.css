@@ -30,26 +30,23 @@ li, p, div {
     color: #005A8C;
 }
 
-/* TODO not being used? */
-.title-addition {
-    color: #519DC2;
-}
 
 h1 {
     font-size: 34px;
     line-height: 38px;
-    color: #5A6166;
+    color: #4e6e61;
 }
 
 h2 {
     font-size: 28px;
     line-height: 32px;
-    color: #005A8C;
+    color: #4e6e61;
 }
 
 h3 {
     font-size: 24px;
     line-height: 28px;
+    color: #4e6e61;
 }
 
 li, p {
@@ -65,9 +62,16 @@ a {
 }
 
 a:hover {
-    color: #A4B419;
     text-decoration: underline;
+    color: #00446E;
     transition: all 0.3s ease-out;
+}
+
+a:focus {
+    text-decoration: underline;
+    color: #00446E;
+    transition: all 0.3s ease-out;
+    border: 2px #00446E dashed;
 }
 
 div {
@@ -95,6 +99,7 @@ div {
     width: 100%;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(20px);
+    border-bottom: 1px solid #879900;
 }
 
 .img-kfwlogo {
@@ -198,6 +203,10 @@ div {
 /* General Styling */
 section {
     padding: 100px 0;
+}
+
+#main-part {
+    padding-top: 124px;
 }
 
 .responsive, .wrapper {
@@ -304,14 +313,8 @@ section {
 }
 
 .arrow-right:before {
-    left: 0;
-    margin-right: 10px;
-    content: "\1433";
-    text-decoration: none !important;
-}
-
-.button:hover a.arrow-right:before {
-    text-decoration: none !important;
+    margin-right: 0.5rem;
+    content: url("../icons/pfeil-rechts.svg");
 }
 
 .blur {
@@ -324,8 +327,8 @@ section {
 @media screen and (max-width: 850px) {
 
     #primary-text-container-desktop {
-         display: none;
-     }
+        display: none;
+    }
 
     #primary-text-box {
         position: relative;
@@ -360,30 +363,35 @@ section {
 .parallax {
     /* perspective: 10px;*/
     width: 100vw;
-    height: auto;/*75vh;*/
-    top: 124px;
+    height: auto; /*75vh;*/
+    top: 120px;
     /* overflow-x: hidden;
     overflow-y: scroll;*/
 }
+
 .parallax__group {
     position: relative;
-    top: 124px;
+    top: 120px;
     height: 75vh;
     /*transform-style: preserve-3d;*/
 }
+
 .parallax__layer {
     position: relative;
     display: block;
     left: 0;
 }
+
 .parallax__layer--base {
     width: 100%;
     z-index: -1;
 }
+
 .parallax__layer--back {
     width: 100%;
     z-index: -1;
 }
+
 .parallax__layer--fore {
     width: 100%;
     top: 20px;
@@ -420,17 +428,13 @@ section {
 /*--------------------------------------------------------------
 # Section 4 - style
 --------------------------------------------------------------*/
-.benefit-container {
-    width: 100%;
-    display: inline-flex;
-}
 
 .benefit-box {
     position: relative;
     margin: 15px;
     overflow: hidden;
     border-radius: 4px;
-    width: 100%;
+    width: calc(100% - 30px);
     height: 270px;
 }
 
@@ -453,8 +457,8 @@ section {
 
 .benefit-box .icon svg {
     position: absolute;
-    top: 55%;
-    left: 55%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.3s ease-in-out;
 }
@@ -482,8 +486,12 @@ section {
 --------------------------------------------------------------*/
 
 #programm {
-    background-image: linear-gradient(315deg, #F0EEE1 55%, #ffffff 0%);
+    background-image: linear-gradient(315deg, rgba(81, 157, 194, 0.2) 55%, #ffffff 0%);
     overflow-x: hidden;
+}
+
+.timeline-container {
+    width: 100%;
 }
 
 .timeline {
@@ -618,7 +626,6 @@ details > p {
 }
 
 
-
 /*--------------------------------------------------------------
 # Section 8 - style
 --------------------------------------------------------------*/
@@ -633,11 +640,21 @@ details > p {
     background-blend-mode: lighten;
 }
 
+.team-container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.team-box {
+    max-width: 270px;
+}
+
 .contact-image {
     object-fit: cover;
     object-position: top;
-}
 
+}
 
 #googleMaps {
     width: 100%;
@@ -656,6 +673,7 @@ details > p {
 .footer-box {
     padding-top: 70px;
     padding-bottom: 70px;
+    border-top: 1px solid #879900;
 }
 
 #footer ul {
@@ -677,7 +695,7 @@ details > p {
 }
 
 #footer .social-links a:hover svg {
-    fill: #7da416;
+    fill: #00446E;
 }
 
 .closing-footer {
@@ -719,11 +737,11 @@ details > p {
 }
 
 #back-to-top:hover svg {
-    fill: #7da416;
+    fill: #00446E;
 }
 
 #back-to-top:hover {
-    border-color: #7da416;
+    border-color: #00446E;
     box-shadow: 0 0 75px 50px rgba(0, 0, 0, 0.05);
 }
 
