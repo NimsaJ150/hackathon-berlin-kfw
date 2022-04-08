@@ -215,7 +215,7 @@ section {
 }
 
 .responsive > *, .wrapper > * {
-    padding-inline: 40px;
+    margin-inline: 40px;
 }
 
 /* Mobile Layout */
