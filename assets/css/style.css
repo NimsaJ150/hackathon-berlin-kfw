@@ -74,6 +74,11 @@ a:focus {
     border: 2px #00446E dashed;
 }
 
+.small {
+    font-size: 12px;
+    line-height: 18px;
+}
+
 div {
     margin: 0;
 }
@@ -656,21 +661,38 @@ details > p {
 
 }
 
-.maps-image {
+.maps-div {
     height: 50vh;
     width: 100%;
-    object-fit: cover;
-    border: 0;
 }
 
-a:hover .maps-image {
-    -webkit-filter: brightness(70%);
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+#maps-background {
+    background-position: center;
+    background-image: url("/assets/images/maps.png");
 }
+
+a:hover #maps-button-wrapper {
+    backdrop-filter: blur(20px);
+    filter: brightness(80%);
+}
+
+.maps-button {
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+a:hover .maps-button {
+    display: inline-block;
+    background: #00446E;
+}
+
+.maps-copyright {
+    position: absolute;
+}
+
 
 /*--------------------------------------------------------------
 # footer / Section 9 - style
