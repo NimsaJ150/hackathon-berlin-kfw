@@ -4,6 +4,7 @@
 @font-face {
     font-family: KFWCentroSans;
     src: url('../fonts/KfW Webfonts/KfW Centro Sans Webfont/KfW Centro Sans Regular/KFWCentroSans-Reg.ttf');
+    font-display: swap;
 }
 
 /*--------------------------------------------------------------
@@ -420,7 +421,7 @@ section {
 # Section 3 - style
 --------------------------------------------------------------*/
 #skills-background {
-    background-image: url("/assets/images/Meetingsituation_kleine Datei.jpg");
+    background-image: url("/assets/images/Meetingsituation_kleine-Datei-min.webp");
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
