@@ -28,9 +28,9 @@ function set_countdown() {
         difference = difference_start;
         end_text = " bis zum Start der Challenge!"
     } else if (difference_end > 0) {
-        start_text = "Seit ";
+        start_text = "";
         difference = -difference_start;
-        end_text = " läuft die Challenge!"
+        end_text = " seit dem Start der Challenge!"
     } else {
         start_text = "";
         difference = -difference_end;
