@@ -281,7 +281,7 @@ section {
 }
 
 .image {
-    max-width: 100%;
+    width: 100%;
 }
 
 .img-wrap {
@@ -421,7 +421,7 @@ section {
 # Section 3 - style
 --------------------------------------------------------------*/
 #skills-background {
-    background-image: url("/assets/images/Meetingsituation_kleine-Datei-min.webp");
+    background-image: url("../images/Meetingsituation_kleine-Datei-min.webp");
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
@@ -634,7 +634,7 @@ details > p {
 --------------------------------------------------------------*/
 
 #contact-background {
-    background-image: url("/assets/images/Yannik-Whiteboard.PNG");
+    background-image: url("../images/Yannik-Whiteboard.PNG");
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
@@ -655,7 +655,7 @@ details > p {
 
 .contact-image {
     object-fit: cover;
-    object-position: top;
+    object-position: center;
 
 }
 
@@ -665,7 +665,7 @@ details > p {
 
 #maps-background {
     background-position: center;
-    background-image: url("/assets/images/maps.png");
+    background-image: url("../images/maps.png");
     padding-bottom: 0;
 }
 
