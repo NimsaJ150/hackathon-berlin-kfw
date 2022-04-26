@@ -2,8 +2,7 @@
 
 /* Typography Start*/
 @font-face {
-    font-family: KFWCentroSans;
-    src: url('../fonts/KfW Webfonts/KfW Centro Sans Webfont/KfW Centro Sans Regular/KFWCentroSans-Reg.ttf');
+    font-family: Arial;
     font-display: swap;
 }
 
@@ -13,14 +12,14 @@
 
 body {
     margin: 0;
-    font-family: KFWCentroSans, serif;
+    font-family: Arial, serif;
     font-weight: 300;
     padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6,
 li, p, div {
-    font-family: KFWCentroSans, serif;
+    font-family: Arial, serif;
     font-weight: 300;
     color: #5A6166;
 }
@@ -98,7 +97,7 @@ div {
 #header-section {
     position: sticky;
     z-index: 99;
-    top:0;
+    top: 0;
 }
 
 .header {
@@ -146,7 +145,7 @@ div {
 
 .navbar li {
     display: inline-block;
-    margin: 0 3.5%;
+    margin: 0 3%;
 }
 
 #mobile-menu {
@@ -322,6 +321,18 @@ section {
 .arrow-right:before {
     margin-right: 0.5rem;
     content: url("../icons/pfeil-rechts.svg");
+}
+
+.arrow:before {
+    background: url("../images/GE_Hellgrün_neu_LY.png") no-repeat center;
+    display: inline-block;
+    height: 48px;
+    width: 80px;
+    margin-right: 5px;
+    content: "";
+    background-size: auto 48px;
+    object-fit: contain;
+    vertical-align: text-top;
 }
 
 .blur {
