@@ -463,7 +463,7 @@ section {
     transition: 0.3s ease-in-out;
 }
 
-.benefit-box:hover .icon {
+.benefit-box:hover .icon, .benefit-box:target .icon {
     top: 15px;
     left: calc(50% - 30px);
     width: 60px;
@@ -492,7 +492,7 @@ section {
     opacity: 0;
 }
 
-.benefit-box:hover .content {
+.benefit-box:hover .content, .benefit-box:target .content {
     top: 40%;
     opacity: 1;
 }
