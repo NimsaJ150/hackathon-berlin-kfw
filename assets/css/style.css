@@ -619,6 +619,10 @@ details {
     padding: 10px;
 }
 
+summary::-webkit-details-marker {
+    display: none;
+}
+
 details > summary {
     border: none;
     cursor: pointer;
