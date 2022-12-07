@@ -7,9 +7,9 @@ function set_countdown() {
     const text_object = document.getElementsByClassName('countdown-text');
 
     const curr_time = Date.now();
-    const registration_time = new Date("July 01, 2022 23:59:59");
-    const start_time = new Date("July 08, 2022 17:00:00");
-    const end_time = new Date("July 10, 2022 13:30:00");
+    const registration_time = new Date("March 01, 2023 23:59:59");
+    const start_time = new Date("March 10, 2022 17:00:00");
+    const end_time = new Date("March 12, 2022 13:30:00");
 
     const difference_registration = registration_time - curr_time;
     const difference_start = start_time - curr_time;
