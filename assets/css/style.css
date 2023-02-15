@@ -668,10 +668,14 @@ details > p {
     max-width: 540px;
 }
 
+.contact-image2 {
+    object-fit: fill;
+    object-position: center;
+}
+
 .contact-image {
     object-fit: cover;
     object-position: center;
-
 }
 
 .maps-div {
@@ -679,7 +683,7 @@ details > p {
 }
 
 #maps-background {
-    background-position: center;
+    background-position: 32% 50%;
     background-image: url("../images/maps.png");
     padding-bottom: 0;
 }
