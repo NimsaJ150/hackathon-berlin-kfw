@@ -7,9 +7,11 @@ function set_countdown() {
     const text_object = document.getElementsByClassName('countdown-text');
 
     const curr_time = Date.now();
+
     const registration_time = new Date("June 25, 2023 23:59:59");
     const start_time = new Date("July 14, 2023 17:00:00");
     const end_time = new Date("July 16, 2023 13:30:00");
+
 
     const difference_registration = registration_time - curr_time;
     const difference_start = start_time - curr_time;
