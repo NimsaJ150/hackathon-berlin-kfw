@@ -145,7 +145,7 @@ div {
 
 .navbar li {
     display: inline-block;
-    margin: 0 3%;
+    margin: 0 2%;
 }
 
 #mobile-menu {
@@ -205,6 +205,13 @@ div {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+.anchor{
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
 
 /*--------------------------------------------------------------
 # General Sections
@@ -363,7 +370,7 @@ section {
     }
 
     #primary-text-box {
-        float: left;
+        float: right;
         margin-top: 10vh;
         margin-right: 40px;
         width: 33.4%;
