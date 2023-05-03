@@ -49,13 +49,13 @@ function set_countdown() {
     let sec = Math.floor(rest / (1000));
 
     let day_text = " Tag";
-    let hour_text = " Stunde";
+    let hour_text = " Stunden";
     if (day > 1) {
         day_text += "e";
     }
-    if (hour > 1) {
-        hour_text += "n";
-    }
+    // if (hour > 1) {
+    //     hour_text += "n";
+    // }
 
     const separator = ":";
 
